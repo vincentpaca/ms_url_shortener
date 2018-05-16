@@ -1,0 +1,8 @@
+.container.is-widescreen
+  h1.title.is-3 URL Shortener
+  = form_for @shortened_url do |f|
+    .field.has-addons
+      .control.is-expanded
+        = f.text_field :original_url, class: 'input', placeholder: 'Enter Your URL'
+      .control
+        = f.submit 'Shorten!', class: 'button is-link'
