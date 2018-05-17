@@ -1,4 +1,9 @@
 .container.is-widescreen
-  h1.title.is-3 Your Shortened URL
-  .has-text-link.is-size-4
-    = link_to @url, @url
+  h1.title.is-3 Your shortened URL:
+  .field.has-addons
+    .control.is-size-4
+      = link_to @url, @url, target: '_blank', class: 'input', id: 'shortened-url'
+    .control
+      button.button.copy-to-clipboard[data-clipboard-target='#shortened-url']
+        i.fa.fa-copy
+  = link_to 'Create a new link!', root_path

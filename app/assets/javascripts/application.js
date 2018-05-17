@@ -13,4 +13,5 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require clipboard/dist/clipboard
 //= require_tree .

@@ -1,5 +1,9 @@
 {
   "name": "url_shortener",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "clipboard": "^2.0.1",
+    "font-awesome": "^4.7.0"
+  }
 }
