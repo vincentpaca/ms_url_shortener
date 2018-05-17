@@ -14,4 +14,5 @@
 //= require activestorage
 //= require turbolinks
 //= require clipboard/dist/clipboard
+//= require vue/dist/vue
 //= require_tree .

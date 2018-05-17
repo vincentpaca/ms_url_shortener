@@ -2,7 +2,7 @@
   h1.title.is-3 Your shortened URL:
   .field.has-addons
     .control.is-size-4
-      = link_to @url, @url, target: '_blank', class: 'input', id: 'shortened-url'
+      = link_to @url, @url, target: '_blank', class: 'input', id: 'shortened-url', autofocus: true
     .control
       button.button.copy-to-clipboard[data-clipboard-target='#shortened-url']
         i.fa.fa-copy
