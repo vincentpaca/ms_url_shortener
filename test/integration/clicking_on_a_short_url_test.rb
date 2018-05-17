@@ -3,7 +3,7 @@ require 'test_helper'
 class ClickingOnAShortUrlTest < ActionDispatch::IntegrationTest
 
   def setup
-    @shortened_url = shortened_urls(:one)
+    @shortened_url = shortened_urls(:bla_url)
   end
 
   test 'following a short link' do

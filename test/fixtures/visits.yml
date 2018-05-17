@@ -1,13 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  user_agent: MyString
-  ip_address: MyString
-  referrer: MyString
-  shortened_url_id: 1
+first_visitor:
+  user_agent: Some User Agent String
+  ip_address: 10.205.145.221
+  referrer: https://google.com
+  shortened_url: bla_url
 
-two:
-  user_agent: MyString
-  ip_address: MyString
-  referrer: MyString
-  shortened_url_id: 1
+second_visitor:
+  user_agent: Some Other User Agent String
+  ip_address: 22.204.251.106
+  shortened_url: bla_url
