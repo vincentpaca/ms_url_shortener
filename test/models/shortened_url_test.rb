@@ -10,11 +10,6 @@ class ShortenedUrlTest < ActiveSupport::TestCase
     assert @url.valid?
   end
 
-  test 'invalid url' do
-    @url.original_url = 'invalid url'
-    refute @url.valid?
-  end
-
   test 'should add a unique name on create' do
     @url.save
     assert_not_empty @url.unique_name
