@@ -8,6 +8,6 @@ class ShortenedUrl < ApplicationRecord
   private
 
   def generate_unique_name
-    self.unique_name = SecureRandom.urlsafe_base64(7)
+    self.unique_name = SecureRandom.urlsafe_base64(3)
   end
 end
