@@ -3,6 +3,8 @@ class ShortenedUrl < ApplicationRecord
 
   before_create :generate_unique_name
 
+  has_many :visits
+
   private
 
   def generate_unique_name

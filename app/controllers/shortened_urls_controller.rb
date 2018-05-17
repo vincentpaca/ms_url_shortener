@@ -1,5 +1,7 @@
 class ShortenedUrlsController < ApplicationController
 
+  include Stats
+
   def new
     @shortened_url = ShortenedUrl.new
   end
@@ -21,7 +23,7 @@ class ShortenedUrlsController < ApplicationController
     @shortened_url = ShortenedUrl.find_by(unique_name: params[:id])
 
     if @shortened_url
-      #todo: add the visitor statistics here
+      record_visitor
       redirect_to @shortened_url.original_url
     else
       raise ActionController::RoutingError, 'Not Found'
