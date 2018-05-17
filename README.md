@@ -14,9 +14,8 @@ I'm using yarn to manage vendored JS packages.
 
 I'm using the following libraries:
 - Bulma: A CSS framework. Just makes it easier to layout sections for this app.
-- FontAwesome: Icon toolkit.
 - Clipboard: Cross-browser support for copying things into the clipboard. I didn't want to reinvent the wheel.
-
+- Vue: A bit of an overkill just for the format validation of the URL in the form, but I find it way cleaner than using inline jQuery.
 
 ## Controllers
 There's only two controllers for this app, `shortened_urls_controller.rb` and the `stats_controller.rb`
