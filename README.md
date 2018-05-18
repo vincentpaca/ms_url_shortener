@@ -120,3 +120,10 @@ This is because it's the only object that has logical behaviour within itself th
 
 The behaviour for creating the `Visit` object is done in the controller and is being handled by the integration tests.
 
+## Improvements
+
+- Use ActiveJob for recording URL clicks at `app/controllers/shortened_urls_controller:26`.
+  Makes that call asynchronous, we don't really need the visitor to wait for that transaction to finish
+  before we redirect them.
+- Use more bytes for `SecureRandom` or solve possible collision by adding a uniqueness check in the model.
+- Advanced statistics, like adding analysis on what kind of browsers have visited the links, the most popular referrer URLs for the shortened link.
