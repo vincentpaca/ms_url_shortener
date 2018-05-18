@@ -1,5 +1,13 @@
 # README
 
+## Try it in action
+Visit: https://ms-urlshortener.herokuapp.com/
+
+Try the API:
+```bash
+curl --request PUT "https://ms-urlshortener.herokuapp.com/stats?url=https://ms-urlshortener.herokuapp.com/PcZt"
+```
+
 ## Setup
 I'm using `Rails 5.2.0` and `Ruby 2.5.1` for this application.
 
